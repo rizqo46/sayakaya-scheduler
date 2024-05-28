@@ -1,7 +1,8 @@
 # sayakaya-scheduler
 
 ![alt](images/systemdesign.png)
-Let's assume we already have a backend service, we want to make a scheduler service for birthday promo scenario. In real world maybe we have a notification service that provide for notification features, but for simplify this test project we make notification directly in the scheduler. More advance, we also can use message broker for assign promo to users.
+
+Let's assume we already have a backend service, we want to make a scheduler service for birthday promo scenario. In real world maybe we have a notification service that provide for notification features, but for simplify this test project we make notification directly in the scheduler. More advance, we also can use message broker for assign promo to users. For simplicity I only use email for notification.
 
 ## 1. Flow cart
 
@@ -63,7 +64,9 @@ DB_SSLMODE="disable"
 go build cmd/app/main.go
 ./main
 ```
+### Example email received
 
+![alt](images/example-email.png)
 
 
 
