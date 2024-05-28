@@ -22,7 +22,7 @@ func NewPromoService(db *gorm.DB, promoRepo repository.PromoRepo) PromoService {
 
 func createPromoCode() string {
 	const charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
-	id := make([]byte, 18)
+	id := make([]byte, 8)
 	for i := range id {
 		id[i] = charset[rand.Intn(len(charset))]
 	}
